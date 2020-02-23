@@ -1,0 +1,144 @@
+<style>
+.message-li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+}
+.messages {
+    display: flex;
+    align-items: center;
+}
+.messages div{
+    display: flex;
+    margin-left: 10px;
+    flex-direction: column;
+}
+.times {
+    display: flex;
+    flex-direction: column;
+}
+.swipedown {
+    background-color: rgba(0,0,0,0.1);
+}
+#chengxus{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#odiv {
+    padding-left: 10px;
+}
+.chengxu {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+.chengxutu {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+.chengxu>span {
+    color: #fff;
+    font-size: 12px;
+    margin-top: 5px;
+}
+</style>
+<div class="bui-page">
+    <header class="bui-bar bui-bar-side">
+        <div class="bui-bar-left">
+        </div>
+        <div class="bui-bar-main" style="color:black;">微信[45]</div>
+        <div class="bui-bar-right">
+            <a class="bui-btn" ><i class="icon-search" style="color:black;"></i></a>
+            <a class="bui-btn" ><i class="icon-plus" style="color:black;"></i></a>
+        </div>
+    </header>
+    <main>
+        <!-- 正文内容 -->
+        <!-- 列表控件 html 对应的结构:  -->
+        <div id="uiSwipe" class="wrap"> 
+            <div class="swipedown">
+                <span style="color:#fff;">
+                    小程序
+                </span>
+                <div id="odiv">
+                    <p style="color:#fff;">最近使用</p>
+                    <div id="chengxus">
+                        <div class="chengxu">
+                            <img  class="chengxutu" src="images/applogo.png" alt="">
+                            <span>小程序1</span>
+                        </div>
+                        <div class="chengxu">
+                            <img  class="chengxutu" src="images/applogo.png" alt="">
+                            <span>小程序2</span>
+                        </div>
+                        <div class="chengxu">
+                            <img  class="chengxutu" src="images/applogo.png" alt="">
+                            <span>小程序3</span>
+                        </div>
+                        <div class="chengxu">
+                            <img  class="chengxutu" src="images/applogo.png" alt="">
+                            <span>小程序4</span>
+                        </div>
+                        <div class="chengxu">
+                            <img  class="chengxutu" src="images/applogo.png" alt="">
+                            <span>小程序5</span>
+                        </div>
+                        <div class="chengxu">
+                            <img  class="chengxutu" src="images/applogo.png" alt="">
+                            <span>小程序6</span>
+                        </div> 
+                        <div class="chengxu">
+                            <img  class="chengxutu" src="images/applogo.png" alt="">
+                            <span>小程序6</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 正文内容 -->
+            <div id="uiList" class="bui-scroll">
+                <ul class="bui-list">
+                    <li class="message-li">
+                        <div class="messages">
+                            <img src="images/applogo.png" alt="" width="40px;" height="40px;">
+                            <div >
+                                <span>张三</span>
+                                <span>how are you</span>
+                            </div>
+                        </div>
+                        <div class="times">
+                            <span>23:00</span>
+                            <i class="icon-ding">
+                                &#xe63f;
+                            </i>
+                        </div>
+                    </li>
+                    <li class="message-li">
+                        <div class="messages">
+                            <img src="images/applogo.png" alt="" width="40px;" height="40px;">
+                            <div >
+                                <span>张三</span>
+                                <span>how are you</span>
+                            </div>
+                        </div>
+                        <div class="times">
+                            <span>23:00</span>
+                            <i class="icon-ding">
+                                &#xe63f;
+                            </i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        
+    </main>
+    <footer>
+        <!-- 底部内容 -->
+    </footer>
+</div>
